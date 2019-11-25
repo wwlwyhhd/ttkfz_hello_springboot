@@ -10,9 +10,9 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>wwl.lsf</groupId>
-  <artifactId>hellspringboot</artifactId>
+  <artifactId>ttkfz_hello_springboot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>hellspringboot</name>
+  <name>ttkfz_hello_springboot</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
