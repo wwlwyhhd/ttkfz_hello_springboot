@@ -9,6 +9,7 @@ public class Consumer1 {
 
   @RabbitListener(queues = "ttkfz_first_quence")
   public void showMessage(String message) {
+
     System.out.println("接收到的消息是 = " + message);
   }
 
