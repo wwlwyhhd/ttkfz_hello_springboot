@@ -1,4 +1,4 @@
-package wwl.lsf.hellspringboot;
+package wwl.lsf.hellospringboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.core.Message;

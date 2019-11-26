@@ -1,6 +1,5 @@
-package wwl.lsf.hellspringboot.rabbitmq.consumer;
+package wwl.lsf.hellospringboot.rabbitmq.consumer;
 
-import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
