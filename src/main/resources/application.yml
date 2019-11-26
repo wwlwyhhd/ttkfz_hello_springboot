@@ -3,3 +3,6 @@ server:
 spring:
   rabbitmq:
     host: server02
+    username: guest
+    password: guest
+    virtual-host: /

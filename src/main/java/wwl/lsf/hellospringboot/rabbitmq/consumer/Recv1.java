@@ -8,7 +8,7 @@ import com.rabbitmq.client.Envelope;
 import java.io.IOException;
 import wwl.lsf.hellospringboot.util.RabbitMQConnectionUtil;
 
-public class Recv {
+public class Recv1 {
     private final static String QUEUE_NAME = "ttkfz_first_quence";
 
     public static void main(String[] argv) throws Exception {
@@ -29,9 +29,17 @@ public class Recv {
                 // body 即消息体
                 String msg = new String(body);
                 System.out.println(" [x] received : " + msg + "!");
+//                int i = 1 / 0;
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                channel.basicAck(envelope.getDeliveryTag(),false);
             }
         };
         // 监听队列，第二个参数：是否自动进行消息确认。
-        channel.basicConsume(QUEUE_NAME, true, consumer);
+        channel.basicConsume(QUEUE_NAME, false, consumer);
     }
 }
