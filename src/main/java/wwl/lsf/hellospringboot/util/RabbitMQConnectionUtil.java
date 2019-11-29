@@ -24,4 +24,11 @@ public class RabbitMQConnectionUtil {
     Connection connection = factory.newConnection();
     return connection;
   }
+
+  public static void main(String[] args) {
+    Integer i1 = 2000;
+    Integer i2 = null;
+//    System.out.println(i1.intValue()==i2.intValue());
+    System.out.println(i2.equals(i1));
+  }
 }
